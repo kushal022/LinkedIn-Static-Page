@@ -2,19 +2,19 @@
     list-style-type: none;
 }
 
-.navbar a {
+.second-section a {
     text-decoration: none;
 }
 
 .navbar {
-    background-color: #fcfcfc;
+    background-color: var(--bgColor-nav);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* grid-row: 300px; */
     /* height: 48px; */
 }
 
-/* --------------- First Section ------------------------- */
+/* -//////////////////////// First Section ///////////////////////////--- */
 .first-section {
     /* border: solid 2px; */
     display: flex;
@@ -32,6 +32,10 @@
     position: relative;
     top: 8.5px;
 
+}
+
+.search-text {
+    display: none;
 }
 
 .search-icon {
@@ -53,7 +57,7 @@
 
 }
 
-/* --------------- Second Section ------------------------- */
+/* -//////////////////////// Second Section ///////////////////////////--- */
 
 /* .second-section { */
 /* border: solid 2px; */
@@ -85,13 +89,28 @@
 }
 
 /* selection hover; Right now static */
+/* .list::before {
+    content: "";
+    width: 55px;
+    border-bottom: solid 2px var(--iconColor-hover);
+    position: absolute;
+    top: 51px;
+    display: none;
+} */
+
+/*This is temporary */
 .home-list::before {
     content: "";
     width: 55px;
     border-bottom: solid 2px var(--iconColor-hover);
     position: absolute;
     top: 51px;
+    display: block;
 }
+
+/* .list:hover::before {
+    display: block;
+} */
 
 .home-list .hover {
     color: var(--iconColor-hover);
@@ -100,7 +119,6 @@
 /* hover nav icons*/
 .list:hover .hover {
     color: var(--iconColor-hover);
-    /* border-bottom: solid 1px red; */
 }
 
 /* notifications on icons */
@@ -144,7 +162,7 @@
     left: 78%;
 }
 
-/* --------------- Third Section ------------------------- */
+/* -//////////////////////// Third Section ///////////////////////////--- */
 
 .third-section {
     border-left: solid 1px var(--color-nav-border);
@@ -159,11 +177,27 @@
     justify-items: start;
 }
 
+.three-dot-button {
+    display: none;
+}
+
 .third-section>ul>li {
     display: grid;
     justify-items: center;
 }
 
+.third-section .hover {
+    text-decoration: none;
+}
+
 .premium-text {
-    text-wrap: nowrap;
+    margin-top: 5px;
+    line-height: 15px;
+    text-wrap: wrap;
+    color: var(--iconColor4);
+    /* text-decoration: underline; */
+}
+
+.premium-text:hover {
+    color: var(--iconColor5);
 }
