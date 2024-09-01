@@ -1,0 +1,302 @@
+/* ------------------------ Responsive -------------------- */
+
+/* -/////////////////// 00 - 510 ///////////////////////////////////////-- */
+
+@media screen and (min-width:00px) and (max-width:510px) {
+
+    .navbar {
+        grid-template-columns: 0.4fr 1.8fr 0.15fr;
+    }
+
+    /*--------------- first section ------------- */
+    .first-section {
+        /* border: solid 2px; */
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    #search-box {
+        display: none;
+    }
+
+    .logo-icon {
+        left: 65%;
+        top: 8.5px;
+    }
+
+    .search-icon {
+        font-size: 17px;
+        position: absolute;
+        top: 0.9rem;
+        left: 250%;
+    }
+
+    .search-icon:hover {
+        color: var(--iconColor-hover);
+    }
+
+    /*--------------- second section ------------- */
+
+
+    .second-section>ul {
+        /* border: solid 2px; */
+        padding: 8.5px 2% 8px 0%;
+    }
+
+    .icon-text {
+        display: none;
+    }
+
+    /* select home page */
+    .home-list::before {
+        display: none;
+    }
+
+    /* notifications on icons */
+    .home-list::after {
+        left: 10%;
+    }
+
+    .my-network-list::after {
+        left: 26%;
+    }
+
+    .notification-list::after {
+        left: 74%;
+    }
+
+    /*--------------- third section ------------- */
+    .third-section>ul {
+        display: none;
+    }
+
+    .third-section {
+        border: none;
+    }
+
+    .three-dot-button {
+        display: block;
+        font-size: 1.2rem;
+        margin-top: 0.7rem;
+        margin-left: 0.2rem;
+        border: none;
+        background-color: var(--bgColor-nav);
+        color: var(--iconColor3-nav);
+
+    }
+
+    .three-dot-button:hover {
+        color: var(--iconColor-hover);
+    }
+
+}
+
+/* -/////////////////// 510 - 852 ///////////////////////////////////////-- */
+@media screen and (min-width:510px) and (max-width:852px) {
+
+    .navbar {
+        grid-template-columns: 0.4fr 1fr 1fr;
+    }
+
+    /*--------------- first section ------------- */
+    .first-section {
+        /* border: solid 2px; */
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    #search-box {
+        display: none;
+    }
+
+    .logo-icon {
+        left: 65%;
+        top: 8.5px;
+    }
+
+    .search-icon {
+        font-size: 17px;
+        position: absolute;
+        top: 0.9rem;
+        left: 250%;
+    }
+
+    .search-icon:hover {
+        color: var(--iconColor-hover);
+    }
+
+    /*--------------- second section ------------- */
+
+
+    .second-section>ul {
+        /* border: solid 2px; */
+        padding: 8.5px 2% 8px 0%;
+    }
+
+    /* icon blow text */
+    .icon-text {
+        display: none;
+    }
+
+    /* select home page */
+    .home-list::before {
+        display: none;
+    }
+
+    /* notifications on icons */
+    .home-list::after {
+        left: 10%;
+    }
+
+    .my-network-list::after {
+        left: 26%;
+    }
+
+    .notification-list::after {
+        left: 74%;
+    }
+
+    /*--------------- third section ------------- */
+    .third-section>ul {
+        /* border: solid 2px red; */
+        width: 100%;
+        /* display: grid; */
+        grid-template-columns: 1fr 5fr;
+        /* justify-items: start; */
+    }
+
+    .third-section {
+        border: block;
+        /* margin-right: 0px; */
+    }
+
+    .three-dot-button {
+        display: none;
+    }
+
+    .premium-text {
+        display: block;
+    }
+
+}
+
+/* -/////////////////// 852 - 1123 ///////////////////////////////////////-- */
+@media screen and (min-width:852px) and (max-width:1123px) {
+
+    .navbar {
+        grid-template-columns: 0.23fr 1fr 1fr;
+    }
+
+    /*--------------- first section ------------- */
+    .first-section {
+        /* border: solid 2px; */
+        /* display: flex; */
+        justify-content: flex-start;
+    }
+
+    .logo-search-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .search-text {
+        display: block;
+        font-size: 9px;
+        position: relative;
+        left: 4rem;
+        bottom: 5px;
+        color: var(--iconColor3-nav);
+        text-decoration: none;
+    }
+
+    #search-box {
+        display: none;
+    }
+
+    .logo-icon {
+        left: 65%;
+        top: 8.5px;
+    }
+
+    .search-icon {
+        font-size: 17px;
+        position: relative;
+        top: 0.9rem;
+        left: 2.6rem;
+    }
+
+    /* .search-icon::after {
+        content: "search";
+        font-size: 9px;
+        text-transform: lowercase;
+        position: absolute;
+        top: 110%;
+        right: -15px;
+    } */
+
+    .logo-search-container:hover .hov {
+        color: var(--iconColor-hover);
+    }
+
+    /*--------------- second section ------------- */
+
+
+    .second-section>ul {
+        /* border: solid 2px; */
+        padding: 8.5px 2% 8px 0%;
+    }
+
+    /* icon blow text */
+    .icon-text {
+        display: block;
+    }
+
+    /* select home page */
+    .home-list::before {
+        display: none;
+    }
+
+    /* notifications on icons */
+    .home-list::after {
+        left: 10%;
+    }
+
+    .my-network-list::after {
+        left: 26%;
+    }
+
+    .notification-list::after {
+        left: 74%;
+    }
+
+    /*--------------- third section ------------- */
+    .third-section>ul {
+        /* border: solid 2px red; */
+        width: 100%;
+        /* display: grid; */
+        grid-template-columns: 1fr 5fr;
+        /* justify-items: start; */
+    }
+
+    .third-section {
+        border: block;
+        /* margin-right: 0px; */
+    }
+
+    .three-dot-button {
+        display: none;
+    }
+
+    .premium-text {
+        display: block;
+    }
+
+}
