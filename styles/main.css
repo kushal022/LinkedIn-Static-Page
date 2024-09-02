@@ -104,26 +104,43 @@
     border-style: solid none solid none;
     border-width: 1px;
     border-color: var(--borderColor1);
-    padding: 12px 15px 12px 15px;
-    display: grid;
-    grid-template-columns: 1fr 0.1fr;
+    padding: 12px 0px 12px 0px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
 }
 
 /* .views-box> */
-.profile-view-number,
+.connections,
+.profile-view {
+    padding-left: 15px;
+}
+
+.profile-view-number {
+    color: var(--logoColor);
+    font-weight: 500;
+    margin-left: 8rem;
+}
+
 .connections-number {
     color: var(--logoColor);
     font-weight: 500;
+    margin-left: 8.8rem;
+
 }
 
-.profile-view:hover {
-    background-color: lightblue;
-}
 
-.views-box .connect-alumni {
+.views-box .connections-alumni {
     color: var(--fontColor2);
     font-weight: 500;
 }
+
+/* hover */
+.pro-hov:hover {
+    background-color: var(--hoverBgColor-postSection);
+    background-size: 100%;
+    cursor: pointer;
+}
+
 
 .premium-box {
     border-bottom: solid 1px;
@@ -141,24 +158,44 @@
     color: var(--fontColor2);
 }
 
+/* hover-premium-box */
+.premium-box:hover .premium-msg {
+    background-color: var(--hoverBgColor-postSection);
+    color: var(--logoColor);
+}
+
+.premium-box:hover {
+    background-color: var(--hoverBgColor-postSection);
+    /* color: var(--logoColor); */
+}
+
 .save-items {
     padding: 12px 15px 12px 15px;
     color: var(--fontColor2);
 }
 
+.save-items:hover {
+    background-color: var(--hoverBgColor-postSection);
 
-
-
-
-
-
-
+}
 
 
 /* ------------ recent box-------------------- */
 .porfile .recent-container {
     border: solid 2px rgb(0, 30, 255);
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* \\\\\\\\\\\\\\\\\ middel section \\\\\\\\\\\\\\\\\\ */
 .middle-section {
