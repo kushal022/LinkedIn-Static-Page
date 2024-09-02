@@ -1,0 +1,173 @@
+.main-container {
+    /* background-color: lightblue; */
+    /* border: solid 2px; */
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: 20% 35% 20%; */
+    grid-template-columns: 300px 550px 300px;
+    grid-gap: 30px;
+    margin-top: 30px;
+    /* margin: 30px 5% 0px 5%; */
+    grid-template-areas:
+        "left-section  middle-section  right-section"
+    ;
+    justify-content: center;
+
+
+}
+
+/* .left-section, */
+.middle-section,
+.right-section {
+    /* background-color: var(--bgColor-nav); */
+    border: solid 2px;
+    /* border-radius: 1rem; */
+    /* width: 100%; */
+    /* height: 100vh; */
+
+}
+
+/* \\\\\\\\\\\\\\\\\ left section \\\\\\\\\\\\\\\\\\ */
+.left-section {
+    grid-area: left-section;
+    position: relative;
+    color: var(--fontColor1);
+
+}
+
+/* ------------ profile box-------------------- */
+
+.profile-container {
+    background-color: var(--bgColor-nav);
+    /* border: solid 2px red; */
+    border-radius: var(--radius);
+    box-shadow: var(--boxShadow);
+}
+
+.back-image-box {
+    /* border: solid 2px; */
+    height: 80px;
+}
+
+.back-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.profile-image-box {
+    /* border: solid 2px; */
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 50px;
+    left: 115px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.detail-box {
+    /* border: solid 2px; */
+    text-align: center;
+    padding: 65px 6px 13px 6px;
+    color: var(--fontColor1);
+}
+
+.detail-box>.user-name {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+    color: var(--fontColor2);
+    font-weight: 600;
+}
+
+.detail-box>.user-name:hover {
+    text-decoration: underline var(--fontColor2);
+    cursor: pointer;
+}
+
+.detail-box>.headings {
+    font-size: 0.9rem;
+}
+
+.views-box {
+    border-style: solid none solid none;
+    border-width: 1px;
+    border-color: var(--borderColor1);
+    padding: 12px 15px 12px 15px;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr;
+}
+
+/* .views-box> */
+.profile-view-number,
+.connections-number {
+    color: var(--logoColor);
+    font-weight: 500;
+}
+
+.profile-view:hover {
+    background-color: lightblue;
+}
+
+.views-box .connect-alumni {
+    color: var(--fontColor2);
+    font-weight: 500;
+}
+
+.premium-box {
+    border-bottom: solid 1px;
+    border-color: var(--borderColor1);
+    padding: 12px 15px 12px 15px;
+}
+
+.premium-box .box-icon {
+    padding-right: 10px;
+    color: var(--premium-icon-color);
+}
+
+.premium-box .premium-msg {
+    font-weight: 500;
+    color: var(--fontColor2);
+}
+
+.save-items {
+    padding: 12px 15px 12px 15px;
+    color: var(--fontColor2);
+}
+
+
+
+
+
+
+
+
+
+
+/* ------------ recent box-------------------- */
+.porfile .recent-container {
+    border: solid 2px rgb(0, 30, 255);
+}
+
+/* \\\\\\\\\\\\\\\\\ middel section \\\\\\\\\\\\\\\\\\ */
+.middle-section {
+    grid-area: middle-section;
+
+}
+
+/* \\\\\\\\\\\\\\\\\ right section \\\\\\\\\\\\\\\\\\ */
+.right-section {
+    grid-area: right-section;
+
+}
