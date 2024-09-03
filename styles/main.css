@@ -167,6 +167,7 @@
 .premium-box:hover {
     background-color: var(--hoverBgColor-postSection);
     /* color: var(--logoColor); */
+    cursor: pointer;
 }
 
 .save-items {
@@ -176,20 +177,127 @@
 
 .save-items:hover {
     background-color: var(--hoverBgColor-postSection);
-
+    cursor: pointer;
 }
 
 
 /* ------------ recent box-------------------- */
-.porfile .recent-container {
-    border: solid 2px rgb(0, 30, 255);
+.recent-container {
+    background-color: var(--bgColor-nav);
+    border-radius: var(--radius);
+    box-shadow: var(--boxShadow);
+    margin-top: 12px;
+    margin-bottom: 200px;
+
 }
 
+.recent-container>.recent>.title-recent {
+    padding: 15px 5px 10px 15px;
+    color: var(--fontColor2);
+}
 
+.recent-container>.recent>.title-group {
+    padding: 15px 5px 10px 15px;
+    color: var(--logoColor);
+    font-weight: 500;
+}
 
+.recent-container>.recent>div {
+    padding: 5px 5px 5px 15px;
+}
 
+.recent-container>.recent>div .action {
+    padding-left: 6px;
+}
 
+.recent-container>.recent>div>.gift-icon {
+    color: var(--fontColor2);
+}
 
+.recent-container>.recent>div>.show-more {
+    padding-left: 25px;
+}
+
+.recent-container>.recent>div>.show-icon {
+    padding-left: 5px;
+    color: var(--fontColor2);
+    font-weight: bolder;
+}
+
+/* hover */
+.recent-container>.recent>div:hover {
+    color: var(--fontColor2);
+    background-color: var(--hoverBgColor-postSection);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* <!-- Recent Events --> */
+.recent-container>.events {
+    padding-top: 12px;
+    /* border: solid 1px; */
+}
+
+.recent-container>.events>.title-events {
+    padding: 15px 5px 10px 15px;
+    color: var(--logoColor);
+    font-weight: 500;
+}
+
+.recent-container>.events>.title-events:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.recent-container>.events>.plus-icon {
+    font-size: 2rem;
+    /* margin-right: 0rem; */
+    /* padding-right: 1rem; */
+    position: relative;
+    left: 11rem;
+    top: 6px;
+    color: var(--fontColor3);
+    font-weight: 500;
+}
+
+.recent-container>.events>.plus-icon:hover {
+    cursor: pointer;
+    background-color: var(--hoverBgColor-postSection);
+    border-radius: 50%;
+}
+
+/* <!-- Followed Hastag --> */
+.recent-container>.hastags {
+    padding: 15px 5px 10px 15px;
+    color: var(--logoColor);
+    font-weight: 500;
+}
+
+.recent-container>.hastags:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* <!-- Discover --> */
+.recent-container>.discover {
+    /* text-align: center; */
+    /* font-weight: 500; */
+    border-top: solid 1px var(--borderColor1);
+    /* padding: 15px; */
+}
+
+.recent-container>.discover>.title-discover {
+    font-weight: 500;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.recent-container>.discover :hover {
+    cursor: pointer;
+    color: var(--fontColor2);
+    background-color: var(--hoverBgColor-postSection);
+}
 
 
 
