@@ -1,0 +1,318 @@
+.main-container {
+    /* background-color: lightblue; */
+    /* border: solid 2px; */
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: 20% 35% 20%; */
+    grid-template-columns: 300px 550px 300px;
+    grid-gap: 30px;
+    margin-top: 30px;
+    /* margin: 30px 5% 0px 5%; */
+    grid-template-areas:
+        "left-section  middle-section  right-section"
+    ;
+    justify-content: center;
+
+
+}
+
+/* .left-section, */
+.middle-section,
+.right-section {
+    /* background-color: var(--bgColor-nav); */
+    border: solid 2px;
+    /* border-radius: 1rem; */
+    /* width: 100%; */
+    /* height: 100vh; */
+
+}
+
+/* \\\\\\\\\\\\\\\\\ left section \\\\\\\\\\\\\\\\\\ */
+.left-section {
+    grid-area: left-section;
+    position: relative;
+    color: var(--fontColor1);
+
+}
+
+/* ------------ profile box-------------------- */
+
+.profile-container {
+    background-color: var(--bgColor-nav);
+    /* border: solid 2px red; */
+    border-radius: var(--radius);
+    box-shadow: var(--boxShadow);
+}
+
+.back-image-box {
+    /* border: solid 2px; */
+    height: 80px;
+}
+
+.back-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.profile-image-box {
+    /* border: solid 2px; */
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    position: absolute;
+    top: 50px;
+    left: 115px;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.detail-box {
+    /* border: solid 2px; */
+    text-align: center;
+    padding: 65px 6px 13px 6px;
+    color: var(--fontColor1);
+}
+
+.detail-box>.user-name {
+    font-size: 1.2rem;
+    margin-bottom: 7px;
+    color: var(--fontColor2);
+    font-weight: 600;
+}
+
+.detail-box>.user-name:hover {
+    text-decoration: underline var(--fontColor2);
+    cursor: pointer;
+}
+
+.detail-box>.headings {
+    font-size: 0.9rem;
+}
+
+.views-box {
+    border-style: solid none solid none;
+    border-width: 1px;
+    border-color: var(--borderColor1);
+    padding: 12px 0px 12px 0px;
+    /* display: grid; */
+    /* grid-template-columns: 1fr; */
+}
+
+/* .views-box> */
+.connections,
+.profile-view {
+    padding-left: 15px;
+}
+
+.profile-view-number {
+    color: var(--logoColor);
+    font-weight: 500;
+    margin-left: 8rem;
+}
+
+.connections-number {
+    color: var(--logoColor);
+    font-weight: 500;
+    margin-left: 8.8rem;
+
+}
+
+
+.views-box .connections-alumni {
+    color: var(--fontColor2);
+    font-weight: 500;
+}
+
+/* hover */
+.pro-hov:hover {
+    background-color: var(--hoverBgColor-postSection);
+    background-size: 100%;
+    cursor: pointer;
+}
+
+
+.premium-box {
+    border-bottom: solid 1px;
+    border-color: var(--borderColor1);
+    padding: 12px 15px 12px 15px;
+}
+
+.premium-box .box-icon {
+    padding-right: 10px;
+    color: var(--premium-icon-color);
+}
+
+.premium-box .premium-msg {
+    font-weight: 500;
+    color: var(--fontColor2);
+}
+
+/* hover-premium-box */
+.premium-box:hover .premium-msg {
+    background-color: var(--hoverBgColor-postSection);
+    color: var(--logoColor);
+}
+
+.premium-box:hover {
+    background-color: var(--hoverBgColor-postSection);
+    /* color: var(--logoColor); */
+    cursor: pointer;
+}
+
+.save-items {
+    padding: 12px 15px 12px 15px;
+    color: var(--fontColor2);
+}
+
+.save-items:hover {
+    background-color: var(--hoverBgColor-postSection);
+    cursor: pointer;
+}
+
+
+/* ------------ recent box-------------------- */
+.recent-container {
+    background-color: var(--bgColor-nav);
+    border-radius: var(--radius);
+    box-shadow: var(--boxShadow);
+    margin-top: 12px;
+    margin-bottom: 200px;
+
+}
+
+.recent-container>.recent>.title-recent {
+    padding: 15px 5px 10px 15px;
+    color: var(--fontColor2);
+}
+
+.recent-container>.recent>.title-group {
+    padding: 15px 5px 10px 15px;
+    color: var(--logoColor);
+    font-weight: 500;
+}
+
+.recent-container>.recent>div {
+    padding: 5px 5px 5px 15px;
+}
+
+.recent-container>.recent>div .action {
+    padding-left: 6px;
+}
+
+.recent-container>.recent>div>.gift-icon {
+    color: var(--fontColor2);
+}
+
+.recent-container>.recent>div>.show-more {
+    padding-left: 25px;
+}
+
+.recent-container>.recent>div>.show-icon {
+    padding-left: 5px;
+    color: var(--fontColor2);
+    font-weight: bolder;
+}
+
+/* hover */
+.recent-container>.recent>div:hover {
+    color: var(--fontColor2);
+    background-color: var(--hoverBgColor-postSection);
+    cursor: pointer;
+    font-weight: 500;
+}
+
+/* <!-- Recent Events --> */
+.recent-container>.events {
+    padding-top: 12px;
+    /* border: solid 1px; */
+}
+
+.recent-container>.events>.title-events {
+    padding: 15px 5px 10px 15px;
+    color: var(--logoColor);
+    font-weight: 500;
+}
+
+.recent-container>.events>.title-events:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.recent-container>.events>.plus-icon {
+    font-size: 2rem;
+    /* margin-right: 0rem; */
+    /* padding-right: 1rem; */
+    position: relative;
+    left: 11rem;
+    top: 6px;
+    color: var(--fontColor3);
+    font-weight: 500;
+}
+
+.recent-container>.events>.plus-icon:hover {
+    cursor: pointer;
+    background-color: var(--hoverBgColor-postSection);
+    border-radius: 50%;
+}
+
+/* <!-- Followed Hastag --> */
+.recent-container>.hastags {
+    padding: 15px 5px 10px 15px;
+    color: var(--logoColor);
+    font-weight: 500;
+}
+
+.recent-container>.hastags:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* <!-- Discover --> */
+.recent-container>.discover {
+    /* text-align: center; */
+    /* font-weight: 500; */
+    border-top: solid 1px var(--borderColor1);
+    /* padding: 15px; */
+}
+
+.recent-container>.discover>.title-discover {
+    font-weight: 500;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.recent-container>.discover :hover {
+    cursor: pointer;
+    color: var(--fontColor2);
+    background-color: var(--hoverBgColor-postSection);
+}
+
+
+
+
+
+
+
+/* \\\\\\\\\\\\\\\\\ middel section \\\\\\\\\\\\\\\\\\ */
+.middle-section {
+    grid-area: middle-section;
+
+}
+
+/* \\\\\\\\\\\\\\\\\ right section \\\\\\\\\\\\\\\\\\ */
+.right-section {
+    grid-area: right-section;
+
+}
