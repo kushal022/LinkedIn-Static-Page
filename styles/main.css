@@ -19,8 +19,8 @@
 }
 
 /* .left-section, */
-.middle-section,
-.right-section {
+/* .right-section,  */
+.middle-section {
     /* background-color: var(--bgColor-nav); */
     border: solid 2px;
     /* border-radius: 1rem; */
@@ -315,4 +315,87 @@
 .right-section {
     grid-area: right-section;
 
+}
+
+/* <!-- LinkedIn News --> */
+.news {
+    background-color: var(--bgColor-nav);
+    border-radius: var(--radius);
+    box-shadow: var(--boxShadow);
+}
+
+.news>.title-news-box {
+    padding: 15px 0px 15px 20px;
+}
+
+.news>.title-news-box .i-button {
+    float: right;
+    margin-right: 1rem;
+    color: var(--fontColor2);
+}
+
+.news>.title-news-box .title-linked-news {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--fontColor2);
+}
+
+/* <!-- top stories --> */
+.news>.stories>.title-stories {
+    padding: 0px 0px 5px 20px;
+    color: var(--fontColor1);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.news>.stories>div {
+    padding: 5px 0px 5px 20px;
+}
+
+.news>.stories>div .breaking-news {
+    color: var(--fontColor2);
+    font-weight: 500;
+}
+
+.news>.stories>div .audience {
+    color: var(--fontColor1);
+}
+
+.news>.stories>div:hover {
+    background-color: var(--hoverBgColor-postSection);
+    cursor: pointer;
+}
+
+.news>.stories>.show-box-right {
+    padding: 5px 0px 15px 10px;
+    font-weight: 500;
+}
+
+.news>.stories>.show-box-right>.show-more-right {
+    padding: 1px 10px;
+    color: var(--fontColor1);
+}
+
+.news>.stories>.show-box-right .show-more-right:hover {
+    background-color: var(--hoverBgColor-postSection);
+    color: var(--fontColor2);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* <!-- Today's Puzzles --> */
+
+.news>.puzzles>.title-puzzles {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--fontColor1);
+    padding: 0px 0px 5px 20px;
+}
+
+.news>.puzzles>div {
+    padding: 15px 0px 5px 20px;
+}
+
+.puzz {
+    float: right;
 }
