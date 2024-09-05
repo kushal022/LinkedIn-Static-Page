@@ -19,8 +19,8 @@
 }
 
 /* .left-section, */
-.middle-section,
-.right-section {
+/* .right-section,  */
+.middle-section {
     /* background-color: var(--bgColor-nav); */
     border: solid 2px;
     /* border-radius: 1rem; */
@@ -61,13 +61,14 @@
 
 .profile-image-box {
     /* border: solid 2px; */
-    height: 70px;
-    width: 70px;
+    height: 90px;
+    width: 90px;
+    border: solid 3px white;
     border-radius: 50%;
     background-color: blueviolet;
     position: absolute;
-    top: 50px;
-    left: 115px;
+    top: 45px;
+    left: 100px;
 }
 
 .profile-image {
@@ -97,7 +98,8 @@
 }
 
 .detail-box>.headings {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+    padding: 0px 10px;
 }
 
 .views-box {
@@ -119,12 +121,14 @@
     color: var(--logoColor);
     font-weight: 500;
     margin-left: 8rem;
+    font-size: 0.9rem;
 }
 
 .connections-number {
     color: var(--logoColor);
     font-weight: 500;
     margin-left: 8.8rem;
+    font-size: 0.9rem;
 
 }
 
@@ -204,6 +208,8 @@
 
 .recent-container>.recent>div {
     padding: 5px 5px 5px 15px;
+    font-weight: 500;
+    font-size: 0.89rem;
 }
 
 .recent-container>.recent>div .action {
@@ -314,5 +320,238 @@
 /* \\\\\\\\\\\\\\\\\ right section \\\\\\\\\\\\\\\\\\ */
 .right-section {
     grid-area: right-section;
+
+}
+
+/* <!-- LinkedIn News --> */
+.news {
+    background-color: var(--bgColor-nav);
+    border-radius: var(--radius);
+    box-shadow: var(--boxShadow);
+}
+
+.news>.title-news-box {
+    padding: 15px 0px 15px 20px;
+}
+
+.news>.title-news-box .i-button {
+    float: right;
+    margin-right: 1rem;
+    color: var(--fontColor2);
+}
+
+.news>.title-news-box .title-linked-news {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--fontColor2);
+}
+
+/* <!-- top stories --> */
+.news>.stories>.title-stories {
+    padding: 0px 0px 5px 20px;
+    color: var(--fontColor1);
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.news>.stories>div {
+    padding: 5px 0px 5px 20px;
+}
+
+.news>.stories>div .breaking-news {
+    color: var(--fontColor2);
+    font-weight: 500;
+}
+
+.news>.stories>div .audience {
+    color: var(--fontColor1);
+    font-size: var(--fontSize3);
+}
+
+.news>.stories>div:hover {
+    background-color: var(--hoverBgColor-postSection);
+    cursor: pointer;
+}
+
+.news>.stories>.show-box-right {
+    padding: 5px 0px 15px 10px;
+    font-weight: 500;
+}
+
+.news>.stories>.show-box-right>.show-more-right {
+    padding: 1px 10px;
+    color: var(--fontColor1-1);
+}
+
+.news>.stories>.show-box-right .show-more-right:hover {
+    background-color: var(--hoverBgColor-postSection);
+    color: var(--fontColor2);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* <!-- Today's Puzzles --> */
+.news>.puzzles {
+    padding-bottom: 20px;
+}
+
+.news>.puzzles>.title-puzzles {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--fontColor1);
+    padding: 0px 0px 5px 20px;
+}
+
+.news>.puzzles>div {
+    padding: 10px 0px 10px 20px;
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    grid-template-areas:
+        "left right"
+        "left right-bottom"
+    ;
+}
+
+.news>.puzzles>div:hover {
+    background-color: var(--hoverBgColor-postSection);
+    cursor: pointer;
+}
+
+.puzz-img {
+    width: 50px;
+    height: 50px;
+    border: solid 0.1px;
+    border-radius: 5px;
+    grid-area: left;
+}
+
+.puzz {
+    grid-area: right;
+    font-weight: 500;
+    color: var(--fontColor4);
+}
+
+.text-puzz {
+    grid-area: right-bottom;
+    color: var(--fontColor1);
+    font-size: var(--fontSize3);
+}
+
+/* <!-- Premium Ad --> */
+.right-section>.premium-ad {
+    background-color: var(--bgColor-nav);
+    margin: 15px 0px;
+    box-shadow: var(--boxShadow);
+    border-radius: var(--radius);
+    padding-bottom: 20px;
+}
+
+.premium-ad>.ad {
+    /* float: right; */
+    margin: 8px 12px 0px 80%;
+    color: var(--fontColor3);
+
+}
+
+.premium-ad .three-dot-ad {
+    /* margin-left: 8px; */
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--fontColor2);
+}
+
+.premium-ad .a-1 {
+    margin: 10px 20px 10px 20px;
+    display: block;
+    text-align: center;
+    text-wrap: wrap;
+    text-decoration: none;
+    font-size: 0.85rem;
+    color: var(--fontColor1);
+}
+
+.premium-ad .dp-logo {
+    margin: 10px 20px 0px 50px;
+
+}
+
+.premium-ad .dp-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: 10px;
+
+}
+
+.premium-ad .logo-gold {
+    font-size: 5rem;
+    position: relative;
+    bottom: 15px;
+    left: 20px;
+    color: var(--premium-icon-color);
+}
+
+.premium-ad .a-2 {
+    margin: 0px 20px 20px 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    text-wrap: wrap;
+    font-size: 1.1rem;
+    color: var(--fontColor1-1);
+}
+
+.premium-ad .button-try {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--logoColor);
+    border: solid 2px var(--logoColor);
+    padding: 5px;
+    margin: 10px 80px;
+    border-radius: 2.5rem;
+    font-weight: 500;
+}
+
+/* <!-- footer --> */
+
+.footer-left-section {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-left-section .about {
+    margin: 0px 10px;
+    line-height: 30px;
+    text-decoration: none;
+    font-size: 0.88rem;
+    color: var(--fontColor1);
+}
+
+.footer-left-section .about:hover {
+    color: var(--logoColor);
+    text-decoration: underline;
+}
+
+.footer-left-section .copywrite .logo-footer {
+    margin-right: 5px;
+    margin-left: 25px;
+    color: var(--logoColor);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.logo-footer:hover {
+    cursor: default;
+}
+
+.footer-left-section>.copywrite>p {
+    display: inline;
+    color: var(--fontColor3);
+    padding-bottom: 50px;
+    font-size: 0.8rem;
 
 }

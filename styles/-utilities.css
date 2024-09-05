@@ -6,11 +6,16 @@
 
 :root {
     --font: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
-    --fontSize: ;
+    --fontSize1: 1.2rem;
+    --fontSize1-1: 1.1rem;
+    --fontSize2: 1rem;
+    --fontSize3: 0.8rem;
     --fontColor-page: rgba(0, 0, 0, 0.9);
     --fontColor1: #6e6558;
+    --fontColor1-1: #47423a;
     --fontColor2: #322f29;
     --fontColor3: #2b2823;
+    --fontColor4: rgba(0, 0, 0, 0.9);
     --borderColor1: #6e655827;
     --premium-icon-color: goldenrod;
     --logoColor: rgb(41, 120, 216);
