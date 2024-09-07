@@ -430,19 +430,196 @@
 }
 
 /* <!------------------ Posts section ------------- --> */
+/* ------------- post container -------------- */
+/* ------------- post 1 -------------- */
+.post-container {
+    background-color: var(--bgColor-nav);
+    box-shadow: var(--boxShadow);
+    border-radius: var(--radius);
+    padding: 20px;
+    margin-top: 0.6rem;
+}
+
+.post-container a {
+    text-decoration: none;
+}
+
+.post-container .user-post-dp {
+    border-radius: 50%;
+    width: 65px;
+    /* margin: 15px 0px 0px 15px; */
+    float: left;
+}
+
+.post-container .user-post-detailes {
+    margin-left: 75px;
+
+}
+
+.post-container .user-post-name {
+    color: var(--fontColor3);
+    font-weight: 500;
+}
+
+.post-container .user-pronoun {
+    color: var(--fontColor1);
+}
+
+.post-container .user-headings {
+    color: var(--fontColor1);
+    font-size: 0.8rem;
+    /* line-height: 26px; */
+    margin-top: 5px;
+    display: block;
+}
+
+.post-container .post-time {
+    color: var(--fontColor1);
+    font-size: 0.8rem;
+}
 
 
 
+.post-container .post-likes-comments {
+    display: flex;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-container .comment-repost {
+    margin-left: 17rem;
+    font-size: 0.8rem;
+    color: var(--fontColor1);
+
+}
+
+.comments,
+.repost {
+    color: var(--fontColor1);
+}
+
+.user-post-name:hover,
+.comments:hover,
+.repost:hover {
+    text-decoration: underline;
+    color: var(--logoColor);
+}
+
+.thumb {
+    background-color: var(--logoColor);
+    padding: 4px;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(222, 230, 245);
+}
+
+.heart {
+    background-color: rgb(218, 118, 118);
+    padding: 4px;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(222, 230, 245);
+    margin-left: -5px;
 
 
+}
 
+.bulb {
+    background-color: goldenrod;
+    padding: 4px;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    color: rgb(222, 230, 245);
+    margin-left: -5px;
 
+}
 
+.thumb-icon,
+.heart-icon,
+.bulb-icon {
+    position: relative;
+    bottom: 4.5px;
+    font-size: 0.8rem;
+}
 
+.numbers {
+    margin-left: 8px;
+    color: var(--fontColor1);
+    font-size: 0.99rem;
+}
 
+.numbers:hover {
+    cursor: pointer;
+    color: var(--logoColor);
+    text-decoration: underline;
+}
 
+/* --------------------------------- */
+.post-container>.post-line {
+    opacity: 0.3;
+}
 
+/* --------------------------------- */
+.post-btns-box {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.2rem;
+}
 
+.post-btns-box .post-btn {
+    background: none;
+    border: none;
+    font-size: 0.97rem;
+    color: var(--fontColor2);
+    font-weight: 600;
+    padding: 0.7rem 1rem;
+
+}
+
+.post-btns-box .post-btn-icon {
+    padding-right: 0.4rem;
+    font-size: 1.5rem;
+    position: relative;
+    top: 4px;
+}
+
+.post-btn:hover {
+    cursor: pointer;
+    background-color: var(--hoverBgColor-postSection);
+    border-radius: 5px;
+}
+
+/* ----------- Post contents-text ---------------- */
+.post-text {
+    color: var(--fontColor3);
+    margin-top: 1rem;
+
+}
+
+.post-text .more-read {
+    color: var(--fontColor1);
+}
+
+.post-text .more-read:hover {
+    text-decoration: underline;
+    color: var(--logoColor);
+}
+
+/* ----------- Post contents-image ---------------- */
+.post-with-img {
+    width: 100%;
+    margin-top: 0.7rem;
+    /* margin: 0.7rem -20px 0px -20px; */
+    /* margin-right: -20px; */
+    /* margin-left: -20px; */
+}
+
+.post-with-img .post-img {
+    width: 100%;
+}
 
 
 
