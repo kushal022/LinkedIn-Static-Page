@@ -314,8 +314,138 @@
 /* \\\\\\\\\\\\\\\\\ middel section \\\\\\\\\\\\\\\\\\ */
 .middle-section {
     grid-area: middle-section;
+    border: none;
+}
+
+/* <!-- user post box --> */
+.user-post-box {
+    background-color: var(--bgColor-nav);
+    border-radius: var(--radius);
+    box-shadow: var(--boxShadow);
+    padding-bottom: 20px;
+}
+
+.user-dp-input-box {
+    padding: 20px 15px;
 
 }
+
+.middle-section .user-dp {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
+    float: left;
+}
+
+.middle-section .post-input {
+    padding: 18px 29px;
+    margin-left: 25px;
+    width: 80%;
+    border-radius: 2rem;
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--fontColor1-1);
+    border-color: var(--borderColor1);
+    background-color: var(--bgColor-nav);
+    text-align: start;
+}
+
+.middle-section .post-input:hover {
+    cursor: pointer;
+    background-color: var(--bgColor-page-2);
+}
+
+/*--------- media box------- */
+.middle-section .media-box {
+    display: flex;
+    justify-content: space-around;
+}
+
+.middle-section .media-btn-icon {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    position: relative;
+    top: 5px;
+
+}
+
+.middle-section .media-btn {
+    border: none;
+    background: none;
+    color: var(--fontColor1);
+    font-size: 1.001rem;
+    padding: 3px 10px 10px 10px;
+    font-weight: bold;
+
+}
+
+.media-btn:hover {
+    background-color: var(--hoverBgColor-postSection);
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.btn-icon-1 {
+    color: var(--logoColor);
+    font-size: 2rem;
+}
+
+.btn-icon-2 {
+    color: goldenrod;
+}
+
+.btn-icon-3 {
+    color: brown;
+}
+
+
+/* <!-- Line horizontal box --> */
+
+.middle-section .line-box {
+    margin-top: 20px;
+}
+
+.line-box .line {
+    width: 81%;
+    float: left;
+    opacity: 0.6;
+}
+
+.line-box .line-btn {
+    position: relative;
+    bottom: 12px;
+    margin-left: 8px;
+    border: none;
+}
+
+.line-box .line-text {
+    margin-right: 7px;
+    color: var(--fontColor1);
+}
+
+.line-box .line-btn:hover {
+    cursor: pointer;
+}
+
+/* <!------------------ Posts section ------------- --> */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* \\\\\\\\\\\\\\\\\ right section \\\\\\\\\\\\\\\\\\ */
 .right-section {
