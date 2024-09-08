@@ -5,9 +5,486 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LinkedIn</title>
+    <link rel="stylesheet" href="./styles/-utilities.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/navResponsive.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/mainResponsive.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/b89425afd7.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
+    <!--/////////////////////////// Nav Bar //////////////////////////////////////-->
+    <nav class="navbar">
+        <!------------------------- section-first ----------------------------------------->
+        <section class="first-section">
+            <div class="logo-search-container">
+                <i class="logo-icon bi bi-linkedin"></i>
+                <i class="search-icon hov fa-solid fa-magnifying-glass"></i>
+                <a class="search-text hov" href="#">Search</a>
+                <input type="text" id="search-box" placeholder="Search">
+            </div>
+        </section>
+        <!-------------------------- section-second ----------------------------------->
+        <section class="second-section">
+            <ul class="second-section-icons-list">
+                <li class="home-list list" id="list">
+                    <a href="#"><i class="icons hover fa-solid fa-house-chimney"></i></a>
+                    <!-- <a href="#"><i class="icons hover bi bi-house-door-fill"></i></a> -->
+                    <a class="icon-text hover" href="#">Home</a>
+                </li>
+                <li class="my-network-list list">
+                    <a href="#"><i class="icons hover fa-solid fa-user-group"></i></a>
+                    <a class="icon-text hover" href="#">My Network</a>
+                </li>
+                <li class="jobs-list list">
+                    <a href="#"><i class="icons hover fa-solid fa-briefcase"></i></a>
+                    <a class="icon-text hover" href="#">Jobs</a>
+                </li>
+                <li class="messaging-list list">
+                    <a href="#"><i class="icons hover bi bi-chat-left-dots-fill"></i></a>
+                    <a class="icon-text hover" href="#">Messaging</a>
+                </li>
+                <li class="notification-list list">
+                    <a href="#"><i class="icons hover bi bi-bell-fill"></i></a>
+                    <a class="icon-text hover" href="#">Notifications</a>
+                </li>
+                <li class="messaging-list">
+                    <!-- <a href="#"><i class="icons  bi bi-person-circle"></i></a> -->
+                    <a href="#"><img class="icons nav-profile-img" src="images/profile.jpeg" alt=""></a>
+                    <a class="icon-text " href="#">Me<i class="bi bi-caret-down-fill"></i></a>
+                </li>
+            </ul>
+        </section>
+        <!--------------------- section-third ----------------------------------->
+        <section class="third-section">
+            <ul class="third-section-icon-list">
+                <li class="business list">
+                    <a href="#"><i class="icons hover bi bi-grid-3x3-gap-fill"></i></a>
+                    <a class="icon-text hover" href="#">For Business<i class="bi bi-caret-down-fill"></i></a>
+                </li>
+                <li class="premium">
+                    <!-- <a class="icons hover" href="#">📦</a> -->
+                    <a class="icon-text premium-text" href="#">Don't miss: Premium for ₹ 0</a>
+                </li>
+            </ul>
+            <div class="three-dot">
+                <button class="three-dot-button"><i class="bi bi-three-dots"></i></button>
+            </div>
+        </section>
+    </nav>
+
+    <!--/////////////////////////// Main section: post,feed,news etc //////////////////////////////////////-->
+    <main class="main-container">
+        <!------------------------------- left-section ------------------------------------------>
+        <section class="left-section">
+            <!-- first container -->
+            <div class="profile-container">
+                <div class="back-image-box"><img class="back-image" src="./images/back-banner.png"
+                        alt="background image"></div>
+                <div class="profile-image-box"><img src="images/profile.jpeg" alt="profile image" class="profile-image">
+                </div>
+                <div class="detail-box">
+                    <h5 class="user-name">Kushal Jangid</h5>
+                    <p class="headings">Full stack developer | JavaScript | Python | Node.js | React.js | Ecpress |
+                        DSA | CSS | HTML
+                    </p>
+                </div>
+                <div class="views-box">
+                    <p class="profile-view pro-hov">Profile viewers
+                        <span class="profile-view-number">280</span>
+                    </p>
+                    <p class="connections pro-hov">Connections
+                        <span class="connections-number ">536</span><br>
+                        <span class="connections-alumni">Connect with alumni</span>
+                    </p>
+                </div>
+                <div class="premium-box">
+                    <p class="msg">Job search smarter with Premium <br>
+                        <i class="box-icon bi bi-box2-fill"></i>
+                        <span class="premium-msg">Try Premium for ₹0</span>
+                    </p>
+                </div>
+                <div class="save-items">
+                    <i class="bi bi-bookmark-fill"></i>
+                    <span class="save-item-msg">Saved items</span>
+                </div>
+            </div>
+            <!-------------------------- second container Recent ----------------------->
+            <div class="recent-container">
+                <!--Recent Action -->
+                <div class="recent">
+                    <p class="title-recent">Recent</p>
+                    <div>
+                        <i class="gift-icon bi bi-gift-fill"></i>
+                        <span class="action">Frountend Developers-Html</span>
+                    </div>
+                    <div>
+                        <i class="gift-icon bi bi-gift-fill"></i>
+                        <span class="action">JavaScript</span>
+                    </div>
+                    <div>
+                        <i class="gift-icon bi bi-gift-fill"></i>
+                        <span class="action">React Developers</span>
+                    </div>
+                    <div>
+                        <i class="gift-icon bi bi-gift-fill"></i>
+                        <span class="action">Software Developers</span>
+                    </div>
+                </div>
+
+                <!--Recent Groups -->
+                <div class="recent">
+                    <p class="title-group">Groups</p>
+                    <div>
+                        <i class="gift-icon bi bi-gift-fill"></i>
+                        <span class="action">Frountend Developers-Html</span>
+                    </div>
+                    <div>
+                        <i class="gift-icon bi bi-gift-fill"></i>
+                        <span class="action">JavaScript</span>
+                    </div>
+                    <div>
+                        <i class="gift-icon bi bi-gift-fill"></i>
+                        <span class="action">React Developers</span>
+                    </div>
+                    <div>
+                        <i class="gift-icon bi bi-gift-fill"></i>
+                        <span class="action">Software Developers</span>
+                    </div>
+                    <div>
+                        <span class="action show-more">Show more</span>
+                        <i class="show-icon bi bi-chevron-compact-down"></i>
+                    </div>
+                </div>
+
+                <!-- Recent Events -->
+                <div class="events">
+                    <span class="title-events">Events</span>
+                    <i class="plus-icon bi bi-plus"></i>
+                </div>
+
+                <!-- Followed Hastag -->
+                <div class="hastags">
+                    <span class="title-hastags">Followed Hashtags</span>
+                </div>
+
+                <!-- Discover -->
+                <div class="discover">
+                    <h4 class="title-discover">Discover more</h4>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!--//////////////////////////// Middle-section //////////////////////////////-->
+
+        <section class="middle-section">
+            <!-- user post box -->
+            <div class="user-post-box">
+                <div class="user-dp-input-box">
+                    <a href=""><img class="user-dp" src="images/profile.jpeg" alt="user-dp"></a>
+                    <button class="post-input">Start post, try writing with AI"</button>
+                </div>
+                <!-- /*--------- media box------- */ -->
+
+                <div class="media-box">
+                    <button class="media-btn"><i class="media-btn-icon btn-icon-1 bi bi-card-image"></i>media</button>
+                    <button class="media-btn"><i class="media-btn-icon btn-icon-2 bi bi-calendar3"></i>event</button>
+                    <button class="media-btn"><i class="media-btn-icon btn-icon-3 bi bi-text-paragraph"></i>Write
+                        article</button>
+                </div>
+            </div>
+
+            <!-- Line horizontal box -->
+            <div class="line-box">
+                <hr class="line">
+                <button class="line-btn"><span class="line-text">Sort by:</span>Top <i
+                        class="bi bi-caret-down-fill"></i></button>
+            </div>
+            <!------------------ Posts section ------------- -->
+            <!------------------ Posts 1 ------------- -->
+            <section class="post-container">
+                <img class="user-post-dp" src="images/post-user-dp.jpg" alt="people-image">
+                <div class="user-post-detailes">
+                    <a class="user-post-name" href="#">Rishabh Mishra </a>
+                    <a class="user-pronoun" href="#">(He/Him) &#x2022; Following </a>
+                    <a class="user-headings" href="#">Sr Data Analyst | Google Certified | 310k + Subs @ YouTub...</a>
+                    <a class="post-time" href="#">8h &#x2022; <i class="bi bi-globe-central-south-asia"></i> </a>
+                </div>
+                <!-- ------ post contents------- -->
+                <p class="post-text">
+                    🚀 Exciting Project Reveal! 🚀
+                    - I’m thrilled to share my latest project where I’ve utilized React and JavaScript to design a
+                    stunning 3D model! 🌟
+                    <!-- 🔹 Key Features:
+                    1. Dynamic 3D rendering with React
+                    2. Smooth interactions and animations
+                    3. Enhanced user experience through modern JavaScript techniques
+                    - Diving into the world of 3D design has been a challenging yet rewarding experience. I’m eager to
+                    hear your thoughts and feedback!
+                    hashtag#ReactJS hashtag#JavaScript hashtag#3DModeling hashtag#WebDevelopment hashtag#Frontend
+                    hashtag#TechInnovation -->
+                    <a class="more-read" href="#">…more</a>
+                </p>
+                <!-- ------------- -->
+                <div class="post-likes-comments">
+                    <div class="thumb">
+                        <i class="thumb-icon bi bi-hand-thumbs-up-fill"></i>
+                    </div>
+                    <div class="heart">
+                        <i class="heart-icon bi bi-heart-fill"></i>
+                    </div>
+                    <div class="bulb">
+                        <i class="bulb-icon bi bi-lightbulb-fill"></i>
+                    </div>
+                    <a class="numbers" href="#">88</a>
+                    <div class="comment-repost">
+                        <a href="#" class="comments">45 comments</a>
+                        <span>&#x2022;</span>
+                        <a href="#" class="repost">25 reposts</a>
+                    </div>
+                </div>
+                <hr class="post-line">
+                <div class="post-btns-box">
+                    <button class="post-btn"><i class="post-btn-icon bi bi-hand-thumbs-up"></i>Like</button>
+                    <button class="post-btn"><i class="post-btn-icon bi bi-chat-text"></i>Comment</button>
+                    <button class="post-btn"><i class="post-btn-icon bi bi-repeat"></i>Repost</button>
+                    <button class="post-btn"><i class="post-btn-icon bi bi-send-fill"></i>Send</button>
+                </div>
+            </section>
+
+
+            <!-- ------ post 2------- -->
+            <section class="post-container">
+                <img class="user-post-dp" src="images/post-user-dp.jpg" alt="people-image">
+                <div class="user-post-detailes">
+                    <a class="user-post-name" href="#">Rishabh Mishra </a>
+                    <a class="user-pronoun" href="#">(He/Him) &#x2022; Following </a>
+                    <a class="user-headings" href="#">Sr Data Analyst | Google Certified | 310k + Subs @ YouTub...</a>
+                    <a class="post-time" href="#">8h &#x2022; <i class="bi bi-globe-central-south-asia"></i> </a>
+                </div>
+                <!-- ------ post contents------- -->
+                <p class="post-text">
+                    🚀 Exciting Project Reveal! 🚀
+                    - I’m thrilled to share my latest project where I’ve utilized React and JavaScript to design a
+                    stunning 3D model! 🌟
+                    <!-- 🔹 Key Features:
+                    1. Dynamic 3D rendering with React
+                    2. Smooth interactions and animations
+                    3. Enhanced user experience through modern JavaScript techniques
+                    - Diving into the world of 3D design has been a challenging yet rewarding experience. I’m eager to
+                    hear your thoughts and feedback!
+                    hashtag#ReactJS hashtag#JavaScript hashtag#3DModeling hashtag#WebDevelopment hashtag#Frontend
+                    hashtag#TechInnovation -->
+                    <a class="more-read" href="#">…more</a>
+                <div class="post-with-img">
+                    <img src="images/post-content-1.jpg" alt="" class="post-img">
+                </div>
+                </p>
+                <!-- ------------- -->
+                <div class="post-likes-comments">
+                    <div class="thumb">
+                        <i class="thumb-icon bi bi-hand-thumbs-up-fill"></i>
+                    </div>
+                    <div class="heart">
+                        <i class="heart-icon bi bi-heart-fill"></i>
+                    </div>
+                    <div class="bulb">
+                        <i class="bulb-icon bi bi-lightbulb-fill"></i>
+                    </div>
+                    <a class="numbers" href="#">88</a>
+                    <div class="comment-repost">
+                        <a href="#" class="comments">45 comments</a>
+                        <span>&#x2022;</span>
+                        <a href="#" class="repost">25 reposts</a>
+                    </div>
+                </div>
+                <hr class="post-line">
+                <div class="post-btns-box">
+                    <button class="post-btn"><i class="post-btn-icon bi bi-hand-thumbs-up"></i>Like</button>
+                    <button class="post-btn"><i class="post-btn-icon bi bi-chat-text"></i>Comment</button>
+                    <button class="post-btn"><i class="post-btn-icon bi bi-repeat"></i>Repost</button>
+                    <button class="post-btn"><i class="post-btn-icon bi bi-send-fill"></i>Send</button>
+                </div>
+            </section>
+
+            <!-- ------ post 3------- -->
+            <section class="post-container">
+                <img class="user-post-dp" src="images/post-user2.jpg" alt="people-image">
+                <div class="user-post-detailes">
+                    <a class="user-post-name" href="#">Rishabh Mishra </a>
+                    <a class="user-pronoun" href="#">(He/Him) &#x2022; Following </a>
+                    <a class="user-headings" href="#">Sr Data Analyst | Google Certified | 310k + Subs @ YouTub...</a>
+                    <a class="post-time" href="#">8h &#x2022; <i class="bi bi-globe-central-south-asia"></i> </a>
+                </div>
+                <!-- ------ post contents------- -->
+                <p class="post-text">
+                    🚀 Exciting Project Reveal! 🚀
+                    - I’m thrilled to share my latest project where I’ve utilized React and JavaScript to design a
+                    stunning 3D model! 🌟
+                    <!-- 🔹 Key Features:
+                    1. Dynamic 3D rendering with React
+                    2. Smooth interactions and animations
+                    3. Enhanced user experience through modern JavaScript techniques
+                    - Diving into the world of 3D design has been a challenging yet rewarding experience. I’m eager to
+                    hear your thoughts and feedback!
+                    hashtag#ReactJS hashtag#JavaScript hashtag#3DModeling hashtag#WebDevelopment hashtag#Frontend
+                    hashtag#TechInnovation -->
+                    <a class="more-read" href="#">…more</a>
+                <div class="post-with-img">
+                    <img src="images/post-content3.jpg" alt="" class="post-img">
+                </div>
+                </p>
+                <!-- ------------- -->
+                <div class="post-likes-comments">
+                    <div class="thumb">
+                        <i class="thumb-icon bi bi-hand-thumbs-up-fill"></i>
+                    </div>
+                    <div class="heart">
+                        <i class="heart-icon bi bi-heart-fill"></i>
+                    </div>
+                    <div class="bulb">
+                        <i class="bulb-icon bi bi-lightbulb-fill"></i>
+                    </div>
+                    <a class="numbers" href="#">88</a>
+                    <div class="comment-repost">
+                        <a href="#" class="comments">45 comments</a>
+                        <span>&#x2022;</span>
+                        <a href="#" class="repost">25 reposts</a>
+                    </div>
+                </div>
+                <hr class="post-line">
+                <div class="post-btns-box">
+                    <button class="post-btn"><i class="post-btn-icon bi bi-hand-thumbs-up"></i>Like</button>
+                    <button class="post-btn"><i class="post-btn-icon bi bi-chat-text"></i>Comment</button>
+                    <button class="post-btn"><i class="post-btn-icon bi bi-repeat"></i>Repost</button>
+                    <button class="post-btn"><i class="post-btn-icon bi bi-send-fill"></i>Send</button>
+                </div>
+            </section>
+
+        </section>
+
+
+
+
+
+
+
+        <!------------------------------- Right-section ------------------------------------------>
+
+        <section class="right-section">
+            <!-- LinkedIn News -->
+            <div class="news">
+                <div class="title-news-box">
+                    <span class="title-linked-news">LinkedIn News</span>
+                    <a href="#"><i class="i-button bi bi-info-square-fill"></i></a>
+                </div>
+                <!-- top stories -->
+                <div class="stories">
+                    <p class="title-stories">Top stories</p>
+                    <div>
+                        <p class="breaking-news">Sumit Antil sets Paralympic record</p>
+                        <p class="audience">11h ago &#x2022; 15,565 readers</p>
+                    </div>
+                    <div>
+                        <p class="breaking-news">Moody's, Fitch upbeat on India</p>
+                        <p class="audience">1d ago &#x2022; 4,000 readers</p>
+                    </div>
+                    <div>
+                        <p class="breaking-news">What's next for India's space tech</p>
+                        <p class="audience">1d ago &#x2022; 23,245 readers</p>
+                    </div>
+                    <div>
+                        <p class="breaking-news">Smaller cities see aviation boom</p>
+                        <p class="audience">1d ago &#x2022; 10,565 readers</p>
+                    </div>
+                    <div>
+                        <p class="breaking-news">IT sector on boom, See about </p>
+                        <p class="audience">2d ago &#x2022; 100,441 readers</p>
+                    </div>
+                    <p class="show-box-right">
+                        <span class="show-more-right">Show more
+                            <i class="show-icon-right bi bi-chevron-compact-down"></i>
+                        </span>
+                    </p>
+
+                </div>
+                <!-- Today's Puzzles -->
+                <div class="puzzles">
+                    <p class="title-puzzles">Today's puzzles</p>
+                    <div class="puzzle-box">
+                        <img class="puzz-img" src="images/puzzle_2.jpg" alt="puzzle-1">
+                        <p class="puzz">Queens</p>
+                        <p class="text-puzz">Crown each region</p>
+                    </div>
+                    <div class="puzzle-box">
+                        <img class="puzz-img" src="images/puzzle_3.jpg" alt="puzzle-2">
+                        <p class="puzz">Pinpoint</p>
+                        <p class="text-puzz">Guess the category</p>
+                    </div>
+                    <div class="puzzle-box">
+                        <img class="puzz-img" src="images/puzzle_4.jpg" alt="puzzle-3">
+                        <p class="puzz">Crossclimb</p>
+                        <p class="text-puzz">Unlock a trivia ladder</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="sticky">
+                <!-- Premium Ad -->
+                <div class="premium-ad">
+                    <p class="ad">Ad
+                        <a href="#"><i class="three-dot-ad bi-three-dots"></a></i>
+                    </p>
+                    <a class="a-1" href="#" title="LinkedIn Premimum">kushal, unlock your full potential with LinkedIn
+                        Premimum</a>
+
+                    <div class="dp-logo">
+                        <a href="#" class="dp-link" title="LinkedIn Premimum"><img class="dp-img"
+                                src="images/profile.jpeg" alt="profile-image"></a>
+                        <a href="#" class="logo-gold" title="LinkedIn Premimum"><i
+                                class="logo-gold-icon bi bi-linkedin"></i></a>
+                    </div>
+                    <a class="a-2" title="LinkedIn Premimum" href="#">See who's viewed your profile in last 90 days</a>
+                    <a class="button-try" title="LinkedIn Premimum" href="#">Try for free!</a>
+                </div>
+                <!-- footer -->
+                <footer class="footer-left-section">
+                    <div class="detail-box">
+                        <a href="#" class="about">About</a>
+                        <a href="#" class="about">Accessibility</a>
+                        <a href="#" class="about">Help Center</a><br>
+                        <a href="#" class="about">Privacy & Terms <i class="bi bi-caret-down-fill"></i></a>
+                        <a href="#" class="about">Ad Choices</a><br>
+                        <a href="#" class="about">Advertising</a>
+                        <a href="#" class="about">Business Services <i class="bi bi-caret-down-fill"></i></a><br>
+                        <a href="#" class="about">Get the LinkedIn app</a>
+                        <a href="#" class="about">More</a>
+                    </div>
+                    <div class="copywrite">
+                        <!-- <img src="images/linkedin-logo.png" alt="linkedIn-logo"> -->
+                        <p class="logo-footer">Linked<i class="bi bi-linkedin"></i></p>
+                        <p>LinkedIn Corporation <i class="bi bi-c-circle"></i> 2024</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+        <section class="chat">
+            <div>
+                <img src="images/profile.jpeg" alt="" class="user-dp-chat">
+            </div>
+            <a href="">Messaging</a>
+            <i class="chat-btn bi bi-three-dots"></i>
+            <i class="chat-btn bi bi-pencil-square"></i>
+            <i class="chat-btn bi bi-chevron-up"></i>
+        </section>
+    </main>
 
 </body>
 

@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font: -apple-system, system-ui, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Fira Sans, Ubuntu, Oxygen, Oxygen Sans, Cantarell, Droid Sans, Apple Color Emoji, Segoe UI Emoji, Segoe UI Emoji, Segoe UI Symbol, Lucida Grande, Helvetica, Arial, sans-serif;
+    --fontSize1: 1.2rem;
+    --fontSize1-1: 1.1rem;
+    --fontSize2: 1rem;
+    --fontSize3: 0.8rem;
+    --fontColor-page: rgba(0, 0, 0, 0.9);
+    --fontColor1: #6e6558;
+    --fontColor1-1: #47423a;
+    --fontColor2: #322f29;
+    --fontColor3: #2b2823;
+    --fontColor4: rgba(0, 0, 0, 0.9);
+    --borderColor1: #6e655827;
+    --borderColor2: #6e655817;
+    --premium-icon-color: goldenrod;
+    --logoColor: rgb(41, 120, 216);
+    --bgColor-page: #eeedec;
+    --bgColor-page-2: #eeeeee6c;
+    --bgColor-nav: #fcfcfc;
+    --iconColor-hover: rgba(0, 0, 0, 0.9);
+    --iconColor1-nav: #322f29;
+    --iconColor2-nav: #474139;
+    --iconColor3-nav: #6e6558;
+    --color-nav-border: #6e655824;
+    --iconColor4: #a26406;
+    --iconColor5: #402b0c;
+    --radius: 10px;
+    --boxShadow: 0px 0px 3px 1px #322f292d;
+    --hoverBgColor-postSection: #eeedec;
+
+
+}
+
+body {
+    background-color: var(--bgColor-page);
+    /* color: var(--fontColor-page); */
+    font-family: var(--font);
+}

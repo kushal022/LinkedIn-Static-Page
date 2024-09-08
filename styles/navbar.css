@@ -1,0 +1,219 @@
+.navbar ul {
+    list-style-type: none;
+}
+
+.second-section a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: var(--bgColor-nav);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-row: 300px; */
+    /* height: 48px; */
+}
+
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+}
+
+/* -//////////////////////// First Section ///////////////////////////--- */
+.first-section {
+    /* border: solid 2px; */
+    display: flex;
+    justify-content: flex-end;
+    /* align-items: baseline; */
+}
+
+.logo-search-container {
+    position: relative;
+    /* border: solid 2px; */
+}
+
+.logo-icon {
+    color: var(--logoColor);
+    position: absolute;
+    top: -6px;
+    /* bottom: 6px; */
+    font-size: 3.2rem;
+
+}
+
+.search-text {
+    display: none;
+}
+
+.search-icon {
+    position: absolute;
+    top: 1.4rem;
+    left: 4.6rem;
+    color: var(--iconColor3-nav);
+    font-size: 1.1rem;
+}
+
+#search-box {
+    padding: 10px 1px 10px 38px;
+    margin: 13px 10px 0px 4rem;
+    font-size: 0.8rem;
+    width: 14rem;
+    background-color: rgba(173, 216, 230, 0.252);
+    border: none;
+    border-radius: 5px;
+
+}
+
+/* -//////////////////////// Second Section ///////////////////////////--- */
+
+/* .second-section { */
+/* border: solid 2px; */
+/* } */
+
+.second-section>ul {
+    /* border: solid 2px; */
+    padding: 8.5px 5px 8px 15%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    position: relative;
+
+}
+
+.second-section>ul>li {
+    display: grid;
+    justify-items: center;
+}
+
+.icon-text {
+    font-size: 0.75rem;
+    color: var(--iconColor3-nav);
+}
+
+.icons {
+    color: var(--iconColor3-nav);
+    /* font-size: 18px; */
+    /* font-size: 1.2rem; */
+    font-size: 1.5rem;
+}
+
+.nav-profile-img {
+    width: 27px;
+    border-radius: 50%;
+    margin-bottom: -4px;
+}
+
+/* selection hover; Right now static */
+/* .list::before {
+    content: "";
+    width: 55px;
+    border-bottom: solid 2px var(--iconColor-hover);
+    position: absolute;
+    top: 51px;
+    display: none;
+} */
+
+/*This is temporary */
+.home-list::before {
+    content: "";
+    width: 55px;
+    border-bottom: solid 2px var(--iconColor-hover);
+    position: absolute;
+    top: 60px;
+    display: block;
+}
+
+/* .list:hover::before {
+    display: block;
+} */
+
+.home-list .hover {
+    color: var(--iconColor-hover);
+}
+
+/* hover nav icons*/
+.list:hover .hover {
+    color: var(--iconColor-hover);
+}
+
+/* notifications on icons */
+.home-list::after {
+    content: " ";
+    background-color: white;
+    border: solid 4px red;
+    padding: 3px;
+    border-radius: 50%;
+    position: absolute;
+    left: 22.5%;
+}
+
+.my-network-list::after {
+    content: "2";
+    font-size: 9px;
+    color: white;
+    width: 9px;
+    height: 9px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: red;
+    padding: 2px 2px 2px 2px;
+    border-radius: 100%;
+    position: absolute;
+    left: 36%;
+}
+
+.notification-list::after {
+    content: "21";
+    font-size: 9px;
+    color: white;
+    width: 9px;
+    height: 9px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: red;
+    padding: 2px 2px 2px 2px;
+    border-radius: 100%;
+    position: absolute;
+    left: 78%;
+}
+
+/* -//////////////////////// Third Section ///////////////////////////--- */
+
+.third-section {
+    border-left: solid 1px var(--color-nav-border);
+}
+
+.third-section>ul {
+    /* border: solid 2px red; */
+    padding: 8.5px 1% 8px 4%;
+    margin-right: 58%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+}
+
+.three-dot-button {
+    display: none;
+}
+
+.third-section>ul>li {
+    display: grid;
+    justify-items: center;
+}
+
+.third-section .hover {
+    text-decoration: none;
+}
+
+.premium-text {
+    margin-top: 5px;
+    line-height: 15px;
+    text-wrap: wrap;
+    color: var(--iconColor4);
+    /* text-decoration: underline; */
+}
+
+.premium-text:hover {
+    color: var(--iconColor5);
+}
