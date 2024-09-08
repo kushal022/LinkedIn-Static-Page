@@ -1,0 +1,80 @@
+/* ------------------------ Responsive -------------------- */
+
+/* -/////////////////// 00 - 510 ///////////////////////////////////////-- */
+
+@media screen and (min-width:00px) and (max-width:767px) {
+    .main-container {
+        display: block;
+        margin-top: 5px;
+    }
+
+    /*---------------- left section---------- */
+    .profile-image-box {
+        left: 15px;
+    }
+
+    .detail-box {
+        text-align: left;
+        padding: 65px 6px 13px 15px;
+    }
+
+    .detail-box>.headings {
+        padding: 0px 0px;
+    }
+
+    .profile-view-number {
+        margin-left: 0.5rem;
+    }
+
+    .connections-number {
+        margin-left: 0.5rem;
+    }
+
+    .recent-container {
+        margin-top: 12px;
+        margin-bottom: 20px;
+    }
+
+    .recent-container>.events>.plus-icon {
+        font-size: 2rem;
+        left: 1rem;
+        top: 6px;
+    }
+
+    /*-------------- right section ---------------- */
+    .right-section {
+        margin-top: 20px;
+    }
+
+    .right-section .premium-ad {
+        margin: 15px 0px;
+    }
+
+    .sticky,
+    .footer,
+    .premium-ad {
+        /* position: sticky; */
+        position: relative;
+        top: 0rem;
+    }
+
+    .chat {
+        display: none;
+    }
+}
+
+/* -/////////////////// 768 - 1000 ///////////////////////////////////////-- */
+@media screen and (min-width:768px) and (max-width:1000px) {
+    .main-container {
+        height: 100vh;
+        grid-template-columns: 300px 550px;
+        grid-template-areas:
+            "left-section  middle-section"
+            "left-section  right-section"
+        ;
+
+    }
+}
+
+/* -/////////////////// 852 - 1123 ///////////////////////////////////////-- */
+@media screen and (min-width:852px) and (max-width:1123px) {}
