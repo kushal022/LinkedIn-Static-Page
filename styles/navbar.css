@@ -14,6 +14,12 @@
     /* height: 48px; */
 }
 
+.navbar {
+    position: sticky;
+    top: 0px;
+    z-index: 9;
+}
+
 /* -//////////////////////// First Section ///////////////////////////--- */
 .first-section {
     /* border: solid 2px; */
@@ -29,8 +35,10 @@
 
 .logo-icon {
     color: var(--logoColor);
-    position: relative;
-    top: 8.5px;
+    position: absolute;
+    top: -6px;
+    /* bottom: 6px; */
+    font-size: 3.2rem;
 
 }
 
@@ -40,17 +48,17 @@
 
 .search-icon {
     position: absolute;
-    top: 1.1rem;
-    left: 3.5rem;
+    top: 1.4rem;
+    left: 4.6rem;
     color: var(--iconColor3-nav);
-    font-size: 12px;
+    font-size: 1.1rem;
 }
 
 #search-box {
-    padding: 8px 1px 8px 38px;
-    margin: 0px 10px 0px 5px;
-    font-size: x-small;
-    width: 12rem;
+    padding: 10px 1px 10px 38px;
+    margin: 13px 10px 0px 4rem;
+    font-size: 0.8rem;
+    width: 14rem;
     background-color: rgba(173, 216, 230, 0.252);
     border: none;
     border-radius: 5px;
@@ -79,13 +87,21 @@
 }
 
 .icon-text {
-    font-size: 9px;
+    font-size: 0.75rem;
     color: var(--iconColor3-nav);
 }
 
 .icons {
     color: var(--iconColor3-nav);
-    font-size: 18px;
+    /* font-size: 18px; */
+    /* font-size: 1.2rem; */
+    font-size: 1.5rem;
+}
+
+.nav-profile-img {
+    width: 27px;
+    border-radius: 50%;
+    margin-bottom: -4px;
 }
 
 /* selection hover; Right now static */
@@ -104,7 +120,7 @@
     width: 55px;
     border-bottom: solid 2px var(--iconColor-hover);
     position: absolute;
-    top: 51px;
+    top: 60px;
     display: block;
 }
 

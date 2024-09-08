@@ -2,7 +2,7 @@
     /* background-color: lightblue; */
     /* border: solid 2px; */
     width: 100%;
-    height: 100vh;
+    height: 1000vh;
     display: grid;
     /* grid-template-columns: 1fr 2fr 1fr; */
     /* grid-template-columns: 20% 35% 20%; */
@@ -745,7 +745,7 @@
 }
 
 /* <!-- Premium Ad --> */
-.right-section>.premium-ad {
+.right-section .premium-ad {
     background-color: var(--bgColor-nav);
     margin: 15px 0px;
     box-shadow: var(--boxShadow);
@@ -812,9 +812,9 @@
     display: block;
     text-align: center;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.0rem;
     color: var(--logoColor);
-    border: solid 2px var(--logoColor);
+    border: solid 1px var(--logoColor);
     padding: 5px;
     margin: 10px 80px;
     border-radius: 2.5rem;
@@ -855,10 +855,75 @@
     cursor: default;
 }
 
-.footer-left-section>.copywrite>p {
+.footer-left-section .copywrite>p {
     display: inline;
     color: var(--fontColor3);
     padding-bottom: 50px;
     font-size: 0.8rem;
 
+}
+
+/* sticky right section */
+.sticky {
+    position: sticky;
+    top: 5rem;
+}
+
+/* chat section */
+.chat {
+
+    background-color: var(--bgColor-nav);
+    box-shadow: var(--boxShadow);
+    height: 55px;
+    width: 300px;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    padding: 8px;
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+}
+
+.chat img {
+    width: 40px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 0.8rem;
+}
+
+.chat>a {
+    color: var(--fontColor3);
+    text-decoration: none;
+    /* padding-top: 2rem; */
+    vertical-align: middle;
+    margin-right: 2.5rem;
+    font-weight: 500;
+}
+
+.chat .chat-btn {
+    font-weight: 600;
+    margin-left: 4px;
+    color: var(--fontColor3);
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 5px;
+
+}
+
+
+.chat>div::before {
+    content: "";
+    padding: 5px;
+    background-color: green;
+    border: solid 1px white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2.3rem;
+    left: 2.5rem;
+}
+
+.chat-btn:hover {
+    background-color: var(--hoverBgColor-postSection);
+    cursor: pointer;
+    border-radius: 50%;
 }
